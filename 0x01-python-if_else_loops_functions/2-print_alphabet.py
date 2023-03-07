@@ -5,5 +5,5 @@ for value in values:
         print(f"{chr(value)}")
         break
 
-    print(f"{chr(value)}", end = "")
+    print("{:s}".format(chr(value)), end = "")
 
