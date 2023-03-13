@@ -2,7 +2,10 @@
 def no_c(my_string):
     for st in my_string:
         if st == "c":
-            st = None
+            table = my_string.maketrans("c", " ")
+            my_string.translate(table)
+            return my_string
         elif st == "C":
-            st = None
-        return my_string
+            table = my_string.maketrans("C", " ")
+            my_string.translate(table)
+            return my_string
