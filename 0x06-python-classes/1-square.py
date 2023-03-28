@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+""" Define square class """
+
+
 class Square:
     """Not Empty class"""
     def __init__(self, size):
