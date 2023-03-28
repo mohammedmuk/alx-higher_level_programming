@@ -2,11 +2,13 @@
 
 
 def safe_print_list_integers(my_list=[], x=0):
-    i = 0
-    while i < x:
-        if type(my_list[i]) is not int:
+    result = 0
+
+    for li in range(0, x):
+        try:
+            print("{:d}".format(my_list[li]), end="")
+            result += 1
+        except (ValueError, TypeError):
             continue
-        print(my_list[i], end="")
-        i += 1
-    print()
-    return x
+    print("")
+    return result
