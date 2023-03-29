@@ -29,6 +29,10 @@ class Square:
             self.__size = value
 
     def area(self):
+        """ Area in square class
+
+            Return: Square Area
+        """
         if type(self.__size) is not int:
             raise TypeError("size must be an integer")
 
