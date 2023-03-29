@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-""" Define Square class """
-
-
 class Square:
 
     """ Square class """
@@ -24,10 +21,13 @@ class Square:
     def size(self, value):
         if type(self.__size) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif self.__size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
     def area(self):
-        return (self.__size * self.__size)
+        if type(self.__size) is not int:
+            raise TypeError("size must be an integer")
+        else:
+            return (self.__size * self.__size)
