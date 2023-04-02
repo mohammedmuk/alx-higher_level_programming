@@ -1,0 +1,74 @@
+================================
+add_integer
+================================
+
+
+>>> add_int = __import__("0-add_integer").add_integer
+
+"""
+  Start First Test
+"""
+
+>>> add_int(12.5, 13)
+25
+
+""" 
+  Start Second Test
+"""
+
+>>> add_int("F", 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+
+""" 
+  Start Third Test
+"""
+
+>>> add_int(10, "c")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+"""
+  Start Forth Test
+"""
+
+
+"""
+  Start Fifth Test
+"""
+
+>>> add_int(20)
+118
+
+"""
+  Start Sixth Test
+"""
+
+>>> add_int(200, 230)
+430
+
+"""
+  Start Seventh Test
+"""
+
+>>> add_int("w", "d")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+""" 
+  Start Eightith Test
+"""
+
+>>> add_int(120.999999, 10)
+130
+
+""" 
+  Start Last Test
+"""
+
+>>> add_int(19.9)
+117
