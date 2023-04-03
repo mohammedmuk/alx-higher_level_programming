@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    """Recltangle class that have to privte attribute"""
+    """This is empty Rectangle class with pass"""
 
     def __init__(self, width=0, height=0):
         """ init function """
