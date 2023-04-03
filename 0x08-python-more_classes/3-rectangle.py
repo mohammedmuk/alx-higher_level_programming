@@ -65,7 +65,8 @@ class Rectangle:
         h = 0
         w = 0
         st = ""
-
+        if self.__height == 0 or self.__width == 0:
+            return st
         while h < self.__height:
             w = 0
             while w < self.__width:
@@ -80,7 +81,8 @@ class Rectangle:
     def __print__(self):
         h = 0
         w = 9
-
+        if self.__height == 0 or self.__width == 0:
+            return ""
         while h < self.__height:
             w = 0
             while w < self.__width:
