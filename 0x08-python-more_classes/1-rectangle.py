@@ -1,25 +1,34 @@
 #!/usr/bin/python3
 
-""" This is for Rectancle class with 3 instances"""
+""" This is for Rectancle class with 2 Getter and 2 Setter"""
 
 
 class Rectangle:
     """Recltangle class that have to privte attribute"""
 
     def __init__(self, width=0, height=0):
+        """ init function """
+
         self.__height = height
         self.__width = width
 
     @property
     def height(self):
+        """ Getter function
+            Return: self.__height"""
+
         return self.__height
 
     @property
     def width(self):
+        """ Getter function
+            Return: self.__width"""
+
         return self.__width
 
     @width.setter
     def width(self, value):
+        """ Setter function make apdate to width to new value"""
         if type(value) != int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -28,6 +37,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """ Setter function make apdate to height to new value"""
         if type(value) != int:
             raise TypeError("height must be an integer")
         elif value < 0:
