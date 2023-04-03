@@ -26,9 +26,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """ Setter function make apdate to width to new value"""
-        if type(value) is not int:
+        if type(self.__width) is not int:
             raise TypeError("width must be an integer")
-        elif value < 0:
+        elif self.__width < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -46,8 +46,8 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """ Setter function make apdate to height to new value"""
-        if type(value) is not int:
+        if type(self.__height) is not int:
             raise TypeError("height must be an integer")
-        elif value < 0:
+        elif self.__height < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
