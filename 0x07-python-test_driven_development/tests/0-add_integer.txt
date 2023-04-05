@@ -3,20 +3,20 @@ add_integer
 ================================
 
 
->>> add_int = __import__("0-add_integer").add_integer
+>>> add_integer = __import__("0-add_integer").add_integer
 
 """
   Start First Test
 """
 
->>> add_int(12.5, 13)
+>>> add_integer(12.5, 13)
 25
 
 """ 
   Start Second Test
 """
 
->>> add_int("F", 5)
+>>> add_integer("F", 5)
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
@@ -26,7 +26,7 @@ TypeError: a must be an integer
   Start Third Test
 """
 
->>> add_int(10, "c")
+>>> add_integer(10, "c")
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
@@ -40,21 +40,21 @@ TypeError: b must be an integer
   Start Fifth Test
 """
 
->>> add_int(20)
+>>> add_integer(20)
 118
 
 """
   Start Sixth Test
 """
 
->>> add_int(200, 230)
+>>> add_integer(200, 230)
 430
 
 """
   Start Seventh Test
 """
 
->>> add_int("w", "d")
+>>> add_integer("w", "d")
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
@@ -63,12 +63,12 @@ TypeError: a must be an integer
   Start Eightith Test
 """
 
->>> add_int(120.999999, 10)
+>>> add_integer(120.999999, 10)
 130
 
 """ 
   Start Last Test
 """
 
->>> add_int(19.9)
+>>> add_integer(19.9)
 117
