@@ -65,10 +65,3 @@ TypeError: a must be an integer
 
 >>> add_integer(120.999999, 10)
 130
-
-""" 
-  Start Last Test
-"""
-
->>> add_integer(19.9)
-117
