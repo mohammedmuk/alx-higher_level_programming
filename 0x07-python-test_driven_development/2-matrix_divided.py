@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def matrix_divided(matrix, div):
     """
     matrix_divided function :
@@ -31,11 +34,3 @@ def matrix_divided(matrix, div):
 if __name__ == "__main__":
     import doctest
     doctest.testfile("tests/2-matrix_divided.txt")
-
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
-print(matrix_divided(matrix, 3))
-print(matrix)

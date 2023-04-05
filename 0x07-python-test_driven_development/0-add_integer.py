@@ -1,10 +1,11 @@
-
+#!/usr/bin/python3
 
 """
    This is module to add-integer function
 
    take two argument and sum it
 """
+
 
 def add_integer(a, b=98):
     """ This is add_integer() function:
@@ -14,8 +15,9 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     elif type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
-    
+
     return int(a) + int(b)
+
 
 if __name__ == "__main__":
     import doctest
