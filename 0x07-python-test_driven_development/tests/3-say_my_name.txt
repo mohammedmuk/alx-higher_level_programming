@@ -1,0 +1,49 @@
+=================================================
+==========================================
+====================================
+say_my_name
+====================================
+==========================================
+=================================================
+
+
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+"""
+ Start First Test
+"""
+
+>>> say_my_name("Mohammed", "Hassan")
+My name is Mohammed Hassan
+
+"""
+ Start Second Test
+"""
+
+>>> say_my_name("Mohammed")
+My name is Mohammed 
+
+"""
+ Start Third Test
+"""
+
+>>> say_my_name(1, "Hassan")
+Traceback (most recent call last):
+   ...
+TypeError: first_name must be a string
+
+"""
+ Start Forth Test
+"""
+
+>>> say_my_name("Mohammed", 1)
+Traceback (most recent call last):
+   ...
+TypeError: last_name must be a string
+
+"""
+ Start Fifth Test
+"""
+
+>>> say_my_name("Hassan__k", "H12")
+My name is Hassan__k H12

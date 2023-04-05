@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     """
     list_t = []
     num = 0
-    if type(div) != int:
+    if type(div) is not int:
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
         if first == matrix[0]:
             num += len(first)
         for second in first:
-            if type(second) != int and type(second) != float:
+            if type(second) is not int and type(second) is not float:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
             else:
                 list_s.append(float("{:.2f}".format(second / div)))
