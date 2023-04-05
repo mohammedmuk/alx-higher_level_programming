@@ -1,4 +1,10 @@
 def matrix_divided(matrix, div):
+    """
+    matrix_divided function :
+    function take dimitional list and divid each element of this list by div arrgument
+
+    Return: new list (list_s)
+    """
     list_t = []
     num = 0
     if type(div) != int:
