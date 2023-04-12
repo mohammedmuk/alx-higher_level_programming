@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 class MyList(list):
     """This is MyList Class"""
 
@@ -5,16 +8,4 @@ class MyList(list):
         for i in self:
             int(i)
         self.sort()
-                
-    
-
-
-my_list = MyList()
-my_list.append(1)
-my_list.append(4)
-my_list.append(2)
-my_list.append(3)
-my_list.append(5)
-print(my_list)
-my_list.print_sorted()
-print(my_list)
+        print(self)
