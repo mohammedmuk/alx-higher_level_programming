@@ -6,6 +6,13 @@ class MyList(list):
 
     def print_sorted(self):
         for i in self:
-            int(i)
-        self.sort()
-        print(self)
+            if type(i) is not int:
+                self[self.index(i)] = int(i)
+        li = self.copy()
+        li.sort()
+        print(li)
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/1-my_list.txt")
