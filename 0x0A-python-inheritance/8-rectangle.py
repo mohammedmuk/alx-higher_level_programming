@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 
 """This is module for BaseGeometry"""
 
@@ -18,7 +18,7 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """This is Rectangle class"""
     def __init__(self, width, height):
-        Rectangle.integer_validator(self, "height", height)
-        Rectangle.integer_validator(self, "width", width)
         self.__height = height
         self.__width = width
+        Rectangle.integer_validator(self, "height", self.__height)
+        Rectangle.integer_validator(self, "width", self.__width)
