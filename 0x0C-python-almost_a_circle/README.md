@@ -1,1 +1,0 @@
-This is directory for python Almost is Circle project
